@@ -2,4 +2,3 @@ locations:
   - location_name: dagster_etl
     code_source:
       module_name: dagster_etl.repository
-      attribute: ozi_repo
