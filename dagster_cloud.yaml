@@ -1,4 +1,5 @@
 locations:
 - code_source:
-    module_name: dagster_etl.definitions
+    module_name: dagster_etl.repository
+    attribute: ozi_repo
   location_name: dagster_etl

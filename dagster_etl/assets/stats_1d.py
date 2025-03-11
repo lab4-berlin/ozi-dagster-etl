@@ -9,7 +9,7 @@ class Stats1dConfig(Config):
     date_to: str
   
 @asset( required_resource_keys={"db"})
-def etl_load_stats_1d(context, config:Stats1dConfig):
+def stats_1d(context, config:Stats1dConfig):
     """
     Extracts daily statistics for a given country and date range,
     and loads them into the database.

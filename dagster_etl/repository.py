@@ -1,14 +1,9 @@
-from dagster import Definitions, repository
-from etl.etl_load_stats_1d import etl_load_stats_1d
-from etl.db_resource import db_connection
-from assets import all_assets
+# dagster_etl/repository.py
+from dagster import repository
 
-defs = Definitions(
-    assets=[etl_load_stats_1d],
-    resources={"db": db_connection}
-)
-
+from dagster_etl.assets import all_assets
 
 @repository
 def ozi_repo():
+    """Repository for Ozi data assets."""
     return [all_assets]
