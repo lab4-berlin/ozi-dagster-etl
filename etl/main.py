@@ -52,8 +52,8 @@ def main():
         print(f"Started:    {task}")
         print(f"At:         {datetime.now()}")
         print(f"Country:    {ALL_COUNTRIES[iso2]}")
-        print(f"Date From:  {date_from.strftime("%Y-%m-%d")}")
-        print(f"Date To:    {date_to.strftime("%Y-%m-%d")}")
+        print(f"Date From:  {date_from.strftime('%Y-%m-%d')}")
+        print(f"Date To:    {date_to.strftime('%Y-%m-%d')}")
         print(f"Resolution: {RESOLUTION_DICT[resolution]}")
 
         # task_map[task](iso2, generate_dates(date_from, date_to, resolution))
