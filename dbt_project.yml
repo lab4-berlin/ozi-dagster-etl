@@ -1,3 +1,4 @@
 name: ozi_etl
 version: 1.0
 config-version: 2
+profile: ozi_etl
