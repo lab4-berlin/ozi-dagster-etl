@@ -1,9 +1,14 @@
 # dagster_etl/repository.py
-from dagster import repository
 
-from dagster_etl.assets import all_assets
+from dagster import Definitions
+from dagster_etl.assets import stats_1d
+from dagster_etl.resources import postgres_resource
+from dagster_etl.io_managers import postgres_io_manager
 
-@repository
-def ozi_repo():
-    """Repository for Ozi data assets."""
-    return [all_assets]
+defs = Definitions(
+    assets=[stats_1d],
+    resources={
+        "postgres": postgres_resource,
+        "postgres_io_manager": postgres_io_manager,
+    },
+)
