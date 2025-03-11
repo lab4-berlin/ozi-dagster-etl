@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./ozi_dagster_etl
+  code_source:
+    module_name: ozi_dagster_etl.definitions
+  location_name: ozi_dagster_etl
