@@ -3,6 +3,9 @@ locations:
     code_source:
       module_name: dagster_etl.repository
 
+python_packages:
+  - psycopg2-binary
+
 resources:
   postgres:
     config:
