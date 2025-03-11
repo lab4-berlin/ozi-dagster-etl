@@ -1,1 +1,11 @@
-
+ozi_etl:
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: my_user
+      password: my_password
+      schema: my_schema
+      dbname: my_database
+      port: 5432
+  target: dev
